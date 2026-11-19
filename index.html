@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>全固体電池製造を革新する粉体技術｜POWTEX2026</title>
+<meta name="description" content="大阪公立大学 化学工学分野 装置工学グループ・計算化学工学グループ POWTEX2026 出展資料（論文DOI一覧・研究支援・人材育成）">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy:#14233C; --teal:#007F6E; --amber:#F2A900; --tint:#EAF3F1; --cream:#FBF3DF;
+  --gray:#5A6370; --line:#D5DDE2; --bg:#FFFFFF;
+}
+* { box-sizing:border-box; }
+html { -webkit-text-size-adjust:100%; }
+body { margin:0; background:var(--bg); color:var(--navy);
+  font-family:"Segoe UI","BIZ UDPGothic","Hiragino Sans","Meiryo",sans-serif;
+  font-size:16px; line-height:1.7; letter-spacing:.03em; }
+a { color:inherit; text-decoration:none; }
+.nb { display:inline-block; }
+h1, h2, h3, .lead, .note, .cta, .files span { word-break:auto-phrase; }
+.wrap { max-width:760px; margin:0 auto; padding:0 16px; }
+header { background:var(--navy); color:#fff; padding:28px 0 24px; }
+header .tag { color:var(--amber); font-weight:700; font-size:14px; margin:0 0 6px; }
+header h1 { font-size:clamp(24px,6vw,36px); line-height:1.3; margin:0 0 6px; letter-spacing:.02em; }
+header .sub { font-size:15px; margin:0 0 14px; opacity:.95; }
+header .org { font-size:14px; margin:0; color:#CFE3EA; }
+header .org b { color:#fff; font-weight:700; }
+header .talk { margin:12px 0 0; font-size:14px; color:var(--amber); font-weight:700; }
+nav { position:sticky; top:0; z-index:5; background:#fff; border-bottom:1px solid var(--line); }
+nav .wrap { display:flex; gap:6px; padding-top:10px; padding-bottom:10px; }
+nav a { flex:1 1 auto; text-align:center; white-space:nowrap; font-size:13px; font-weight:700; padding:8px 6px; border-radius:4px; }
+.c-paper { background:var(--teal); color:#fff; }
+.c-support { background:var(--amber); color:var(--navy); }
+.c-contact { background:var(--navy); color:#fff; }
+.steps { display:flex; flex-wrap:wrap; gap:6px; margin:0 0 18px; }
+.steps a { font-size:13px; font-weight:700; padding:4px 10px; border-radius:4px; background:var(--tint); color:var(--teal); }
+main section.block { padding:28px 0 8px; scroll-margin-top:56px; }
+.step, .contact { scroll-margin-top:64px; }
+h2 { font-size:22px; margin:0 0 4px; padding-left:12px; border-left:6px solid var(--teal); line-height:1.3; }
+#support h2 { border-left-color:var(--amber); }
+.movie { position:relative; aspect-ratio:16/9; margin:0 0 8px; border-radius:4px; overflow:hidden; background:#000; }
+.movie iframe { position:absolute; inset:0; width:100%; height:100%; border:0; }
+.note { color:var(--gray); font-size:13px; margin:0 0 16px; }
+.step { margin:0 0 24px; }
+.step h3 { display:flex; align-items:center; gap:10px; font-size:19px; margin:0 0 2px; }
+.step .num { display:inline-grid; place-items:center; width:30px; height:30px; border-radius:4px; background:var(--teal); color:#fff; font-size:17px; }
+.step .lead { margin:0 0 10px 40px; color:var(--gray); font-size:14px; }
+.papers, .files { list-style:none; margin:0; padding:0; }
+.paper a { display:block; background:var(--tint); border-radius:4px; padding:12px 14px; margin:0 0 8px; }
+.paper a:active, .paper a:hover { outline:2px solid var(--teal); }
+.ptitle { display:block; font-weight:700; font-size:15px; line-height:1.5; letter-spacing:0; }
+.pauth { display:block; color:var(--gray); font-size:13px; margin-top:4px; letter-spacing:0; }
+.pjour { display:block; font-size:13px; margin-top:2px; letter-spacing:0; }
+.pdoi { display:block; color:var(--teal); font-size:13px; margin-top:2px; word-break:break-all; letter-spacing:0; }
+.res { background:var(--tint); border-radius:4px; padding:16px; margin:0 0 12px; }
+.res.ext { background:var(--cream); }
+.res .org { display:inline-block; margin:0 0 6px; padding:1px 8px; border-radius:4px; font-size:12px; font-weight:700; background:var(--teal); color:#fff; }
+.res.ext .org { background:var(--amber); color:var(--navy); }
+.res h3 { font-size:18px; margin:0 0 8px; color:var(--teal); }
+.res.ext h3 { color:var(--navy); }
+.files a { display:flex; justify-content:space-between; align-items:center; gap:12px; background:#fff; border-radius:4px; padding:10px 12px; margin:0 0 6px; font-weight:700; font-size:15px; }
+.files small { flex:0 0 auto; color:var(--gray); font-weight:400; font-size:12px; }
+.contact { background:var(--navy); color:#fff; border-radius:4px; padding:20px 16px; margin:8px 0 28px; }
+.contact p { margin:0 0 6px; }
+.contact .cta { font-size:18px; font-weight:700; color:var(--amber); margin-bottom:10px; }
+.contact a { text-decoration:underline; }
+footer { color:var(--gray); font-size:12px; padding:0 0 32px; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <p class="tag">POWTEX2026 電池製造ゾーン</p>
+    <h1><span class="nb">全固体電池製造を</span><span class="nb">革新する粉体技術</span></h1>
+    <p class="sub"><span class="nb">電解質合成 ×</span> <span class="nb">乾式コーティング ×</span> <span class="nb">DEMシミュレーション</span></p>
+    <p class="org"><span class="nb">大阪公立大学 大学院工学研究科</span> <span class="nb">化学工学分野</span><br>
+      <span class="nb">装置工学グループ｜<b>大崎 修司・綿野 哲</b></span><br>
+      <span class="nb">計算化学工学グループ｜<b>仲村 英也</b></span></p>
+    <p class="talk"><span class="nb">ゾーンプレゼン｜11/27（金）11:40–11:55</span>　<span class="nb">PXステーション</span></p>
+  </div>
+</header>
+<nav aria-label="ページ内リンク">
+  <div class="wrap">
+    <a class="c-paper" href="#papers">論文一覧</a>
+    <a class="c-support" href="#support">研究支援・人材育成</a>
+    <a class="c-contact" href="#contact">お問い合わせ</a>
+  </div>
+</nav>
+<main class="wrap">
+  <section class="block" id="papers">
+    <h2>論文一覧</h2>
+    <p class="note">全19報。タップすると論文ページ（DOI）が開きます。* は責任著者です。</p>
+    <div class="steps"><a href="#step1">1 合成</a><a href="#step2">2 複合化</a><a href="#step3">3 混合・混練</a><a href="#step4">4 成形・圧縮</a><a href="#step5">5 構造・評価</a></div>
+    <section class="step" id="step1">
+      <h3><span class="num">1</span>合成</h3>
+      <p class="lead">固体電解質粒子を「狙った形・サイズ」でつくる</p>
+      <ul class="papers">
+      <li class="paper">
+        <a href="https://doi.org/10.1016/j.powtec.2021.04.050" target="_blank" rel="noopener">
+          <span class="ptitle">Size control of sulfide-based solid electrolyte particles through liquid-phase synthesis</span>
+          <span class="pauth"><b>S. Ohsaki</b>, T. Yano, A. Hatada, H. Nakamura, S. Watano*</span>
+          <span class="pjour"><i>Powder Technol.</i> <b>387</b> (2021) 415-420</span>
+          <span class="pdoi">doi.org/10.1016/j.powtec.2021.04.050</span>
+        </a>
+      </li>
+      <li class="paper">
+        <a href="https://doi.org/10.1016/j.apt.2024.104408" target="_blank" rel="noopener">
+          <span class="ptitle">Effect of reaction temperature and impact force on formation and particle shape of β-Li3PS4 in liquid phase synthesis</span>
+          <span class="pauth">C. Tatsuda, <b>S. Ohsaki</b>*, H. Nakamura, S. Watano</span>
+          <span class="pjour"><i>Adv. Powder Technol.</i> <b>35</b> (2024) 104408</span>
+          <span class="pdoi">doi.org/10.1016/j.apt.2024.104408</span>
+        </a>
+      </li>
+      <li class="paper">
+        <a href="https://doi.org/10.1016/j.powtec.2026.122649" target="_blank" rel="noopener">
+          <span class="ptitle">Continuous-flow synthesis of spherical Li4SnS4 solid electrolyte particles via spray drying</span>
+          <span class="pauth">R. Osaki, H. Tanigaki, M. Iwao, <b>S. Ohsaki</b>*, K. Motohashi, A. Sakuda, A. Hayashi, H. Nakamura, S. Watano</span>
+          <span class="pjour"><i>Powder Technol.</i> <b>480</b> (2026) 122649</span>
+          <span class="pdoi">doi.org/10.1016/j.powtec.2026.122649</span>
+        </a>
+      </li>
+      </ul>
+    </section>
+    <section class="step" id="step2">
+      <h3><span class="num">2</span>複合化</h3>
+      <p class="lead">乾式コーティングで活物質‐固体電解質の接触界面をつくる</p>
+      <ul class="papers">
+      <li class="paper">
+        <a href="https://doi.org/10.1016/j.jpowsour.2019.227579" target="_blank" rel="noopener">
+          <span class="ptitle">Dry coating of active material particles with sulfide solid electrolytes for an all-solid-state lithium battery</span>
+          <span class="pauth">H. Nakamura*, T. Kawaguchi, T. Masuyama, A. Sakuda, T. Saito, K. Kuratani, <b>S. Ohsaki</b>, S. Watano</span>
+          <span class="pjour"><i>J. Power Sources</i> <b>448</b> (2020) 227579</span>
+          <span class="pdoi">doi.org/10.1016/j.jpowsour.2019.227579</span>
+        </a>
+      </li>
+      <li class="paper">
+        <a href="https://doi.org/10.1016/j.jpowsour.2022.232379" target="_blank" rel="noopener">
+          <span class="ptitle">Design of active-material/solid-electrolyte composite particles with conductive additives for all-solid-state lithium-ion batteries</span>
+          <span class="pauth">E. Hayakawa, H. Nakamura*, <b>S. Ohsaki</b>, S. Watano</span>
+          <span class="pjour"><i>J. Power Sources</i> <b>555</b> (2023) 232379</span>
+          <span class="pdoi">doi.org/10.1016/j.jpowsour.2022.232379</span>
+        </a>
+      </li>
+      <li class="paper">
+        <a href="https://doi.org/10.1016/j.apt.2022.103470" target="_blank" rel="noopener">
+          <span class="ptitle">Characterization of solid-electrolyte/active-material composite particles with different surface morphologies for all-solid-state batteries</span>
+          <span class="pauth">E. Hayakawa, H. Nakamura*, <b>S. Ohsaki</b>, S. Watano</span>
+          <span class="pjour"><i>Adv. Powder Technol.</i> <b>33</b> (2022) 103470</span>
+          <span class="pdoi">doi.org/10.1016/j.apt.2022.103470</span>
+        </a>
+      </li>
+      <li class="paper">
+        <a href="https://doi.org/10.1016/j.apt.2022.103633" target="_blank" rel="noopener">
+          <span class="ptitle">Solid electrolyte/graphite composite particle for an all-solid-state lithium-ion battery</span>
+          <span class="pauth">M. Iwao, R. Sakurai, H. Nakamura*, E. Hayakawa, <b>S. Ohsaki</b>, S. Watano</span>
+          <span class="pjour"><i>Adv. Powder Technol.</i> <b>33</b> (2022) 103633</span>
+          <span class="pdoi">doi.org/10.1016/j.apt.2022.103633</span>
+        </a>
+      </li>
+      <li class="paper">
+        <a href="https://doi.org/10.2497/jjspm.67.149" target="_blank" rel="noopener">
+          <span class="ptitle">Design of Composite Particle of Electrode Active Material and Ionic Conductive Material by Means of a Dry Coating Technology</span>
+          <span class="pauth">H. NAKAMURA</span>
+          <span class="pjour"><i>J. Jpn. Soc. Powder Powder Metall.</i> <b>67</b> (2020) 149-152</span>
+          <span class="pdoi">doi.org/10.2497/jjspm.67.149</span>
+        </a>
+      </li>
+      </ul>
+    </section>
+    <section class="step" id="step3">
+      <h3><span class="num">3</span>混合・混練</h3>
+      <p class="lead">合材を「均一に・連続で」混ぜる</p>
+      <ul class="papers">
+      <li class="paper">
+        <a href="https://doi.org/10.1016/j.apt.2022.103705" target="_blank" rel="noopener">
+          <span class="ptitle">Dry mixing of cathode composite powder for all-solid-state batteries using a high-shear mixer</span>
+          <span class="pauth">E. Hayakawa, H. Nakamura*, <b>S. Ohsaki</b>, S. Watano</span>
+          <span class="pjour"><i>Adv. Powder Technol.</i> <b>33</b> (2022) 103705</span>
+          <span class="pdoi">doi.org/10.1016/j.apt.2022.103705</span>
+        </a>
+      </li>
+      <li class="paper">
+        <a href="https://doi.org/10.1002/aesr.202200206" target="_blank" rel="noopener">
+          <span class="ptitle">Continuous Compositing Process of Sulfur/Conductive‐Additive Composite Particles for All‐Solid‐State Lithium Sulfur Batteries</span>
+          <span class="pauth">M. Iwao, H. Miyamoto, H. Nakamura*, E. Hayakawa, <b>S. Ohsaki</b>, S. Watano</span>
+          <span class="pjour"><i>Adv. Energy Sustain. Res.</i> <b>5</b> (2024) 2200206</span>
+          <span class="pdoi">doi.org/10.1002/aesr.202200206</span>
+        </a>
+      </li>
+      <li class="paper">
+        <a href="https://doi.org/10.1016/j.jpowsour.2025.238866" target="_blank" rel="noopener">
+          <span class="ptitle">Correlation between sulfur-existing regions in sulfur/porous-carbon composite particles and electrochemical performance of all-solid-state lithium-sulfur batteries</span>
+          <span class="pauth">M. Iwao, <b>S. Ohsaki</b>, S. Watano, H. Nakamura*</span>
+          <span class="pjour"><i>J. Power Sources</i> <b>663</b> (2026) 238866</span>
+          <span class="pdoi">doi.org/10.1016/j.jpowsour.2025.238866</span>
+        </a>
+      </li>
+      <li class="paper">
+        <a href="https://doi.org/10.1016/j.powtec.2026.122482" target="_blank" rel="noopener">
+          <span class="ptitle">Continuous hot-melt kneading for composite sulfur, conductive additive, and solid electrolyte in all-solid-state lithium-sulfur batteries</span>
+          <span class="pauth">M. Iwao, H. Harada, <b>S. Ohsaki</b>, S. Watano, H. Nakamura*</span>
+          <span class="pjour"><i>Powder Technol.</i> <b>478</b> (2026) 122482</span>
+          <span class="pdoi">doi.org/10.1016/j.powtec.2026.122482</span>
+        </a>
+      </li>
+      </ul>
+    </section>
+    <section class="step" id="step4">
+      <h3><span class="num">4</span>成形・圧縮</h3>
+      <p class="lead">電極の緻密化をDEMで「見える化」</p>
+      <ul class="papers">
+      <li class="paper">
+        <a href="https://doi.org/10.1016/j.apt.2021.02.040" target="_blank" rel="noopener">
+          <span class="ptitle">Numerical study on compression processes of cohesive bimodal particles and their packing structure</span>
+          <span class="pauth">T. Yano, <b>S. Ohsaki</b>*, H. Nakamura, S. Watano*</span>
+          <span class="pjour"><i>Adv. Powder Technol.</i> <b>32</b> (2021) 1362-1368</span>
+          <span class="pdoi">doi.org/10.1016/j.apt.2021.02.040</span>
+        </a>
+      </li>
+      <li class="paper">
+        <a href="https://doi.org/10.1016/j.apt.2023.104245" target="_blank" rel="noopener">
+          <span class="ptitle">Compression properties of bimodal powders with different plasticities in the elastoplastic powder compression process: A numerical analysis</span>
+          <span class="pauth">T. Yano, <b>S. Ohsaki</b>*, H. Nakamura, S. Watano</span>
+          <span class="pjour"><i>Adv. Powder Technol.</i> <b>34</b> (2023) 104245</span>
+          <span class="pdoi">doi.org/10.1016/j.apt.2023.104245</span>
+        </a>
+      </li>
+      <li class="paper">
+        <a href="https://doi.org/10.4164/sptj.61.144" target="_blank" rel="noopener">
+          <span class="ptitle">Numerical Analysis of Compression Properties of the Binary Mixture of Powder with Different Particle Plasticities</span>
+          <span class="pauth">T. Yano, <b>S. Ohsaki</b>*, H. Nakamura, S. Watano</span>
+          <span class="pjour"><i>J. Soc. Powder Technol., Japan</i> <b>61</b> (2024) 144-153</span>
+          <span class="pdoi">doi.org/10.4164/sptj.61.144</span>
+        </a>
+      </li>
+      <li class="paper">
+        <a href="https://doi.org/10.1080/00219592.2026.2696146" target="_blank" rel="noopener">
+          <span class="ptitle">Numerical Analysis of Consolidation and Agglomerate Disintegration Behavior of Bimodal-Sized Particles Under Compression and Shear Application</span>
+          <span class="pauth">H. Yoshitomi, T. Yano, <b>S. Ohsaki</b>*, H. Nakamura, S. Watano*</span>
+          <span class="pjour"><i>J. Chem. Eng. Jpn.</i> <b>59</b> (2026) 2696146</span>
+          <span class="pdoi">doi.org/10.1080/00219592.2026.2696146</span>
+        </a>
+      </li>
+      </ul>
+    </section>
+    <section class="step" id="step5">
+      <h3><span class="num">5</span>構造・評価</h3>
+      <p class="lead">電極構造と電池性能をつなぐ</p>
+      <ul class="papers">
+      <li class="paper">
+        <a href="https://doi.org/10.1016/j.est.2026.120973" target="_blank" rel="noopener">
+          <span class="ptitle">Effect of size distribution of solid electrolyte on tortuosity of ionic conductive paths: A combined experimental and simulation study</span>
+          <span class="pauth">T. Yano*, M. Hofer, <b>S. Ohsaki</b>*, H. Nakamura, S. Watano, S. Asano, G. Inoue, A. Kwade, P. Michalowski</span>
+          <span class="pjour"><i>J. Energy Storage</i> <b>153</b> (2026) 120973</span>
+          <span class="pdoi">doi.org/10.1016/j.est.2026.120973</span>
+        </a>
+      </li>
+      <li class="paper">
+        <a href="https://doi.org/10.1016/j.cherd.2026.06.045" target="_blank" rel="noopener">
+          <span class="ptitle">In-situ evaluation of the effect of fine-particle addition on battery performance</span>
+          <span class="pauth">S. Katayama, N. Akiyama, M. Iwao, <b>S. Ohsaki</b>*, H. Nakamura, S. Watano</span>
+          <span class="pjour"><i>Chem. Eng. Res. Des.</i> <b>231</b> (2026) 612-619</span>
+          <span class="pdoi">doi.org/10.1016/j.cherd.2026.06.045</span>
+        </a>
+      </li>
+      <li class="paper">
+        <a href="https://doi.org/10.1016/j.apt.2023.104264" target="_blank" rel="noopener">
+          <span class="ptitle">Statistical analysis of electrode fabrication process for all-solid-state batteries and effects of electrode fabrication conditions on battery performance</span>
+          <span class="pauth">T. Kawaguchi, H. Nakamura*, E. Hayakawa, <b>S. Ohsaki</b>, S. Watano</span>
+          <span class="pjour"><i>Adv. Powder Technol.</i> <b>34</b> (2023) 104264</span>
+          <span class="pdoi">doi.org/10.1016/j.apt.2023.104264</span>
+        </a>
+      </li>
+      </ul>
+    </section>
+  </section>
+  <section class="block" id="support">
+    <h2>研究支援・人材育成のご案内</h2>
+    <p class="note">資料はタップするとダウンロードできます。</p>
+    <section class="res">
+      <p class="org">大阪公立大学</p>
+      <h3>全固体電池研究所</h3>
+      <ul class="files">
+        <li><a href="files/ASSB_Newsletter_No6.pdf" target="_blank" rel="noopener"><span>全固体電池研究所 NEWSLETTER No.6</span><small>PDF 2.4 MB</small></a></li>
+      </ul>
+    </section>
+    <section class="res">
+      <p class="org">大阪公立大学</p>
+      <h3>共用研究機器センター OShaRE</h3>
+      <ul class="files">
+        <li><a href="files/OShaRE_flyer.pdf" target="_blank" rel="noopener"><span>OShaRE 利用案内チラシ</span><small>PDF 0.8 MB</small></a></li>
+        <li><a href="https://www.omu.moe/news/2026-10-07-d2624442.html" target="_blank" rel="noopener"><span>OShaRE ご案内ページ（臨時サイト）</span><small>Web</small></a></li>
+        <li><a href="https://www.youtube.com/watch?v=EHth9JBCDRs" target="_blank" rel="noopener"><span>OShaRE 紹介ムービー</span><small>YouTube</small></a></li>
+      </ul>
+    </section>
+    <section class="res ext">
+      <p class="org">主催｜(株)PS&amp;T</p>
+      <h3>シミュレーション・エキスパート短期養成講座</h3>
+      <ul class="files">
+        <li><a href="files/Expert2027_guide.pdf" target="_blank" rel="noopener"><span>第12期（2027年度）募集のご案内</span><small>PDF 0.2 MB</small></a></li>
+        <li><a href="files/Expert2027_basic.pdf" target="_blank" rel="noopener"><span>基礎編パンフレット</span><small>PDF 0.7 MB</small></a></li>
+        <li><a href="files/Expert2027_advanced.pdf" target="_blank" rel="noopener"><span>応用編パンフレット</span><small>PDF 0.8 MB</small></a></li>
+        <li><a href="files/Expert2026_schedule_basic.pdf" target="_blank" rel="noopener"><span>（参考資料）2026年度 基礎編 講習会スケジュール</span><small>PDF 0.7 MB</small></a></li>
+        <li><a href="files/Expert2026_schedule_advanced.pdf" target="_blank" rel="noopener"><span>（参考資料）2026年度 応用編 講習会スケジュール</span><small>PDF 0.7 MB</small></a></li>
+        <li><a href="files/Expert2027_application.docx" target="_blank" rel="noopener"><span>誓約書・申込書</span><small>Word 31 KB</small></a></li>
+      </ul>
+    </section>
+  </section>
+  <section class="contact" id="contact">
+    <p class="cta">共同研究・技術相談をお待ちしています</p>
+    <p><span class="nb">大阪公立大学 大学院工学研究科</span> <span class="nb">化学工学分野 装置工学グループ</span><br>准教授 大崎 修司</p>
+    <p>Tel. 072-254-9578<br>E-mail <a href="mailto:shuji.ohsaki@omu.ac.jp">shuji.ohsaki@omu.ac.jp</a></p>
+  </section>
+</main>
+<footer class="wrap">© Osaka Metropolitan University, Department of Chemical Engineering</footer>
+</body>
+</html>
